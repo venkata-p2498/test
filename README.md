@@ -1,2 +1,2 @@
 # test
-GitHub Actions with your C++ sample code
+GitHub Actions with your C++ example code
