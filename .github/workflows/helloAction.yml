@@ -12,7 +12,10 @@ jobs:
       steps:
       - uses: actions/checkout@v2
       - name: install cppunit
-        run: sudo apt install -y libcppunit-dev
+        run: |
+          sudo apt install -y libcppunit-dev
+          ls
+          chmod 777 configure.sh
       - name: configure
         run: ./configure.sh
       - name: make
