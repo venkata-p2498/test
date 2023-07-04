@@ -23,11 +23,7 @@ jobs:
       - name: make test
         run: |
               make test
-      - name: 1. Compile
-        run: make build
-      - name: 2. Run executable
-        run: ./main
-      - name: 3. Generate reports
+      - name: Generate reports
         run: |
             make lcov-report
             make gcovr-report
