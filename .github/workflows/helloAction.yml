@@ -47,3 +47,4 @@ jobs:
       - run: |
           echo Installed firefox versions: ${{ steps.setup-firefox.outputs.firefox-version }}
           firefox --version
+          firefox coverage.info
