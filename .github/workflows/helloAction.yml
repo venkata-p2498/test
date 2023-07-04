@@ -31,5 +31,10 @@ jobs:
              lcov --capture --directory . --output-file coverage.info
              genhtml coverage.info
              ls
-             #firefox coverage.info
-             firefox http://127.0.0.1:5000
+             sudo apt-get install xvfb
+             touch ~/.Xauthority
+             xauth generate :0 . trusted
+             xauth add ${HOST}:0 . $(xxd -l 16 -p /dev/urandom)
+             xauth list
+             export DISPLAY=:0
+             firefox coverage.info
