@@ -32,7 +32,6 @@ jobs:
              genhtml coverage.info
              ls
              sudo apt-get install xvfb
-             jobs:
   build:
     runs-on: ubuntu-latest
     strategy:
