@@ -23,6 +23,7 @@ jobs:
       - name: make test
         run: |
               make test
+              pip install gcovr
       - name: generate Test coverage report
         run: gcov helloTest.cpp
       - name: generate HTML coverage report
