@@ -29,7 +29,7 @@ jobs:
       - name: generate HTML coverage report
         run: | 
              lcov --capture --directory . --output-file coverage.info
-             genhtml -s -d -t -k -c coverage.info
+             genhtml -s -d -t coverage.info
              ls
              sudo apt-get install xvfb
       - name: Save state
