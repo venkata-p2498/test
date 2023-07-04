@@ -32,21 +32,6 @@ jobs:
              genhtml coverage.info
              ls
              sudo apt-get install xvfb
-  build:
-    runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        firefox: [ '84.0', 'latest-beta', 'latest-devedition', 'latest-esr', 'latest' ]
-    name: Firefox ${{ matrix.firefox }} sample
-    steps:
-      - name: Setup firefox
-        id: setup-firefox
-        uses: browser-actions/setup-firefox@v1
-        with:
-          firefox-version: ${{ matrix.firefox }}
-      - run: |
-          echo Installed firefox versions: ${{ steps.setup-firefox.outputs.firefox-version }}
-          firefox --version
       - name: Save state
         run: echo "{name}={value}" >> $GITHUB_STATE
 
