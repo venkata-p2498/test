@@ -23,4 +23,14 @@ jobs:
       - name: make test
         run: |
               make test
-              cd /
+      - name: Install dependency
+        run: make deps
+
+      - name: 1. Compile
+        run: make build
+      - name: 2. Run executable
+        run: ./main
+      - name: 3. Generate reports
+      run: |
+        make lcov-report
+        make gcovr-report
