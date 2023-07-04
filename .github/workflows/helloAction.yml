@@ -49,7 +49,7 @@ jobs:
           firefox --version
       - name: HTML Preview
         id: html_preview
-        uses: pavi2410/html-preview-action@v2
+        uses: venkata-p2498/html-preview-action@v2
         with:
              html_file: 'index.html'
         
