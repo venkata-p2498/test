@@ -32,8 +32,19 @@ jobs:
              genhtml coverage.info
              ls
              sudo apt-get install xvfb
-             touch ~/.Xauthority
-             xauth generate :0 . trusted
-             xauth add ${HOST}:0 . $(xxd -l 16 -p /dev/urandom)
-             xauth list
-             firefox coverage.info
+             jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        firefox: [ '84.0', 'latest-beta', 'latest-devedition', 'latest-esr', 'latest' ]
+    name: Firefox ${{ matrix.firefox }} sample
+    steps:
+      - name: Setup firefox
+        id: setup-firefox
+        uses: browser-actions/setup-firefox@v1
+        with:
+          firefox-version: ${{ matrix.firefox }}
+      - run: |
+          echo Installed firefox versions: ${{ steps.setup-firefox.outputs.firefox-version }}
+          firefox --version
