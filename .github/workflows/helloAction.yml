@@ -25,7 +25,7 @@ jobs:
               make test
               pip install gcovr
       - name: generate Test coverage report
-        run: gcov helloTest.cpp
+        run: gcov helloTest.cpp --capture --directory dist --output-file helloTest.gcda
       - name: generate HTML coverage report
         run: | 
              lcov --capture --directory dist --output-file coverage.info
