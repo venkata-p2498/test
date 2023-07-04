@@ -47,11 +47,15 @@ jobs:
       - run: |
           echo Installed firefox versions: ${{ steps.setup-firefox.outputs.firefox-version }}
           firefox --version
+      - name: Save state
+        run: echo "{name}={value}" >> $GITHUB_STATE
+
+      - name: Set output
+        run: echo "{name}={value}" >> $GITHUB_OUTPUT
+        
       - name: HTML Preview
         id: html_preview
         uses: pavi2410/html-preview-action@v2
         with:
              html_file: 'coverage.info'
-        
-        
-    
+  
