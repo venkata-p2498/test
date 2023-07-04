@@ -31,6 +31,6 @@ jobs:
       - name: 2. Run executable
         run: ./main
       - name: 3. Generate reports
-      run: |
-        make lcov-report
-        make gcovr-report
+        run: |
+            make lcov-report
+            make gcovr-report
