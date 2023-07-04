@@ -21,4 +21,6 @@ jobs:
       - name: make
         run: make
       - name: make test
-        run: make test
+        run: |
+              make test
+              cd /
