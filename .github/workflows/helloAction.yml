@@ -28,8 +28,8 @@ jobs:
         run: gcov -b -c -i helloTest.cpp 
       - name: generate HTML coverage report
         run: | 
-             lcov 
-             #genhtml coverage.info
+             lcov --base-directory test/
+             genhtml coverage.info
              ls
              sudo apt-get install xvfb
       - name: Save state
