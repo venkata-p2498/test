@@ -47,5 +47,5 @@ jobs:
       - run: |
           echo Installed firefox versions: ${{ steps.setup-firefox.outputs.firefox-version }}
           firefox --version
-          export DISPLAY=:0
+          export DISPLAY = 0
           firefox coverage.info
