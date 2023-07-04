@@ -14,7 +14,7 @@ jobs:
       - name: install cppunit
         run: |
           sudo apt install -y libcppunit-dev
-          ls
+          sudo apt-get -y install lcov
           chmod 777 configure.sh
       - name: configure
         run: ./configure.sh
