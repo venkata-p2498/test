@@ -7,5 +7,5 @@ jobs:
     name: HTML Preview
     steps:
       - uses: actions/checkout@v2
-      - name: Get HTML preview link
+      - name: Get HTML preview links
         uses: ./
