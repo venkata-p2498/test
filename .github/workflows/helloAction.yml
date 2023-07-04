@@ -28,7 +28,7 @@ jobs:
         run: gcov -b -c -i helloTest.cpp 
       - name: generate HTML coverage report
         run: | 
-             lcov --capture 
+             lcov 
              #genhtml coverage.info
              ls
              sudo apt-get install xvfb
