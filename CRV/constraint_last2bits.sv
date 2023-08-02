@@ -15,6 +15,8 @@ module tb;
   initial begin
   bus = new();
     repeat(50) begin   // object bus will be randomized 50 times
+    
+      //object is randomized using randomize() for (addr/data) till all the constraints are satisfied
     success = bus.randomize();
     $display("addr : %0b data : %0b", bus.addr, bus.data);
     end
