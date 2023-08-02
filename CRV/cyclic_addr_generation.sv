@@ -1,12 +1,12 @@
 class Bus;
   
-  // 1. randc: random cyclic value upto 16 bits
+  // 1. randc: random cyclic value upto 16 bits (cyclic random variables)
   // 2. Ex: randc bit[1:0] r_var; // r_var is a 2 bit random variable , can take values between 0 to 3 (2^2 = 4 combinations).
   // 3. randc limitations: randc can take datatype of only bit or enum 
   
   randc bit [3:0] addr; //address generation should be in cyclic order and it should not repeat
   
-  // 4. rand:returns the value over the entire range
+  // 4. rand:returns the value over the entire range (standard random variables)
   // 5. bit: unsigned integer random variable and randc [3:0] 4 bit unsigned integer random variable
   // 6. Ex: rand bit [7:0] r_var; r_var is a 8 bit unsigned integer random variable. Can take values between 0 to 255 (2^7 = 256 combinations)
   
