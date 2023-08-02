@@ -4,7 +4,7 @@ class Bus;
   rand bit [15:0] addr;
   rand bit [31:0] data;
   
-  constraint word_align{ addr [1:0] == 2'b0; } // The last two bits of addr should be '0'
+  constraint word_align{ addr [1:0] == 2'b0; } // The last two bits of addr pin should be '0'
   
 endclass
 
