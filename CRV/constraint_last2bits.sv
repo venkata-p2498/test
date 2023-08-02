@@ -14,7 +14,7 @@ module tb;
 
   initial begin
   bus = new();
-    repeat(50) begin
+    repeat(50) begin   // object bus will be randomized 50 times
     success = bus.randomize();
     $display("addr : %0b data : %0b", bus.addr, bus.data);
     end
