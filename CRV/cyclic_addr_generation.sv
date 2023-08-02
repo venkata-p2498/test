@@ -7,6 +7,12 @@ class Bus;
   //rand:returns the value over the entire range
   //bit: unsigned integer random variable and randc [3:0] 4 bit unsigned integer random variable
   rand bit[3:0] data;
+
+  constraint range10 {
+    data < 'd10; // always less than 10
+    data % 2 == 0; // event numbers only
+  }
+  
 endclass
 
 module tb;
