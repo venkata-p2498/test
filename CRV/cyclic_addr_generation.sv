@@ -1,8 +1,8 @@
 class Bus;
   
-  //randc: random cyclic value upto 16 bits
-  //Ex: randc bit[1:0] r_var; // r_var is a 2 bit random variable , can take values between 0 to 3.
-  // randc limitations: randc can take datatype of only bit or enum 
+  // 1. randc: random cyclic value upto 16 bits
+  // 2. Ex: randc bit[1:0] r_var; // r_var is a 2 bit random variable , can take values between 0 to 3.
+  // 3. randc limitations: randc can take datatype of only bit or enum 
   randc bit [3:0] addr; //address generation should be in cyclic order and it should not repeat
   
   //rand:returns the value over the entire range
