@@ -63,24 +63,23 @@ endmodule
 -------------------------------
 
 /*output  with constraint
-# KERNEL: addr = 5 data = 6
-# KERNEL: addr = e data = 2
+# KERNEL: addr = 3 data = 6
+# KERNEL: addr = 2 data = 8
 # KERNEL: addr = 1 data = 2
-# KERNEL: addr = 3 data = 4
-# KERNEL: addr = 4 data = 0
-# KERNEL: addr = 8 data = 4
-# KERNEL: addr = 7 data = 4
-# KERNEL: addr = 9 data = 4
+# KERNEL: addr = 1 data = 8
+# KERNEL: addr = 3 data = 8
+# KERNEL: addr = 2 data = 2
+# KERNEL: addr = 3 data = 0
+# KERNEL: addr = 2 data = 0
+# KERNEL: addr = 1 data = 4
+# KERNEL: addr = 2 data = 0
+# KERNEL: addr = 1 data = 4
+# KERNEL: addr = 3 data = 0
 # KERNEL: addr = 2 data = 4
-# KERNEL: addr = c data = 2
-# KERNEL: addr = 6 data = 0
-# KERNEL: addr = b data = 6
-# KERNEL: addr = f data = 2
-# KERNEL: addr = a data = 0
-# KERNEL: addr = 0 data = 0
-# KERNEL: addr = d data = 0
-# KERNEL: addr = a data = 0
-# KERNEL: addr = 3 data = 2
-# KERNEL: addr = 6 data = 8
-*/
+# KERNEL: addr = 3 data = 0
+# KERNEL: addr = 1 data = 4
+# KERNEL: addr = 3 data = 8
+# KERNEL: addr = 1 data = 4
+# KERNEL: addr = 2 data = 0
+# KERNEL: addr = 2 data = 0
 --------------------------------
