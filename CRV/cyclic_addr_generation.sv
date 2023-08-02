@@ -18,6 +18,11 @@ class Bus;
     data < 'd10; // always less than 10
     data % 2 == 0; // event numbers only
   }
+
+  constraint c1{
+      addr > 0;
+      addr < 4;
+    }
   
 endclass
 
