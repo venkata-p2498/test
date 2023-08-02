@@ -1,13 +1,11 @@
 // To demonstrate cyclic random and standard randomization techniques
-module test_tb;
-
-  bit success = 0;
-
   class rand_c;
     randc bit [3:0] cyc_rand;
     rand  bit [3:0] std_rand;
   endclass
 
+module test_tb;
+  bit success = 0;
   initial begin
     rand_c rand_obj;
     rand_obj = new();
