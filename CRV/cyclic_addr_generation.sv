@@ -1,10 +1,11 @@
 class Bus;
   
   //randc: random cyclic value upto 16 bits
-  //bit: unsigned integer random variable and randc [3:0] 4 bit unsigned integer random variable
+  
   randc bit [3:0] addr; //address generation should be in cyclic order and it should not repeat
   
   //rand:returns the value over the entire range
+  //bit: unsigned integer random variable and randc [3:0] 4 bit unsigned integer random variable
   rand bit[3:0] data;
 endclass
 
