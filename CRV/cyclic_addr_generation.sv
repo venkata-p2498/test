@@ -2,6 +2,7 @@ class Bus;
   
   //randc:returns the value over the entire range
   randc bit [3:0] addr; //address generation should be in cyclic order and it should not repeat
+  
   //random cyclic value upto 16 bits
   rand bit[3:0] data;
 endclass
