@@ -14,3 +14,27 @@ module tb;
     end 
   end
 endmodule
+
+---------------------------------
+/*
+# KERNEL: addr = e data = 2
+# KERNEL: addr = b data = 2
+# KERNEL: addr = c data = 9
+# KERNEL: addr = f data = a
+# KERNEL: addr = 0 data = c
+# KERNEL: addr = 4 data = 0
+# KERNEL: addr = 2 data = 9
+# KERNEL: addr = 7 data = 5
+# KERNEL: addr = 9 data = 0
+# KERNEL: addr = 1 data = b
+# KERNEL: addr = 3 data = 0
+# KERNEL: addr = 5 data = 5
+# KERNEL: addr = a data = 8
+# KERNEL: addr = 6 data = a
+# KERNEL: addr = 8 data = e
+# KERNEL: addr = d data = 5
+# KERNEL: addr = 9 data = b
+# KERNEL: addr = a data = 9
+# KERNEL: addr = c data = d
+*/
+-------------------------------
