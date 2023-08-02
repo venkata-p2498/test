@@ -5,8 +5,8 @@ class Bus;
   // 3. randc limitations: randc can take datatype of only bit or enum 
   randc bit [3:0] addr; //address generation should be in cyclic order and it should not repeat
   
-  //rand:returns the value over the entire range
-  //bit: unsigned integer random variable and randc [3:0] 4 bit unsigned integer random variable
+  // 4. rand:returns the value over the entire range
+  // 5. bit: unsigned integer random variable and randc [3:0] 4 bit unsigned integer random variable
   rand bit[3:0] data;
 
   //adding a constraint
