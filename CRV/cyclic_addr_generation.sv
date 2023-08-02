@@ -28,7 +28,7 @@ module tb;
 endmodule
 
 ---------------------------------
-/*
+/* with out constraint
 # KERNEL: addr = e data = 2
 # KERNEL: addr = b data = 2
 # KERNEL: addr = c data = 9
