@@ -9,7 +9,7 @@ class Bus;
 endclass
 
 module tb;
-  Bus bus;
+  Bus bus; // a bus is created
   bit success;
 
   initial begin
