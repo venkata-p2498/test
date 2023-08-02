@@ -8,7 +8,7 @@ class Bus;
   
   // 4. rand:returns the value over the entire range
   // 5. bit: unsigned integer random variable and randc [3:0] 4 bit unsigned integer random variable
-  // 6. Ex: rand bit [7:0] r_var; r_var is a 8 bit unsigned integer random variable. Can take values between 0 to 255.
+  // 6. Ex: rand bit [7:0] r_var; r_var is a 8 bit unsigned integer random variable. Can take values between 0 to 255 (2^7 = 256 combinations)
   
   rand bit[3:0] data;
 
