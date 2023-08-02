@@ -2,6 +2,11 @@
   class rand_c;
     randc bit [3:0] cyc_rand;
     rand  bit [3:0] std_rand;
+    
+    constraint c1{
+      cyc_rand > 0;
+      cyc_rand < 4;
+    }
   endclass
 
 module test_tb;
