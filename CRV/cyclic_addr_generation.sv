@@ -25,7 +25,7 @@ module tb;
   initial begin  
     Bus bus = new(); // bus object is created 
     repeat(16) begin    
-      if(bus.randomize() == 1)     
+      if(bus.randomize() == 1) // object is randomized using randomize(), which causes new random values to be selected for variables (addr/data)   
         $display("addr = %0h data = %0h", bus.addr, bus.data);
       else
         $display("Randomization Failed");  
