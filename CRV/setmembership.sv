@@ -1,7 +1,7 @@
 class rand_c;
   rand integer int1, int2, int3;
   
-  //for set membership : constraints for the same variables but for different variables
+  //for set membership : constraints for the same variables but for different ranges (hardcoding the valuesfor different ranges)
   constraint con1{int1 inside {1, 2, 3, 4, 5, [11:15], [int2:int3]};}
   constraint con1a{!int1 inside {55, 65, 75};}
   constraint con2{int2 > 50 && int2 < 60;}
